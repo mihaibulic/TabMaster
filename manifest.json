@@ -1,6 +1,6 @@
 {
     "name": "TabMaster",
-    "version": "0.14",
+    "version": "0.16",
     "manifest_version": 2,
     "description": "Permanently keep your pins pinned and see tab numbers for fast switching.",
     "icons": 
@@ -11,12 +11,12 @@
         },
     "background": 
         {
-            "scripts": [ "background45.js"]
+            "scripts": [ "background.js"]
         },
     "options_page": "options.html",
     "permissions": ["background", "tabs"],
     "content_scripts": [{ 
         "matches": ["*://*/*"],
-        "js": ["content5.js"]
+        "js": ["content.js"]
     }]
 }
